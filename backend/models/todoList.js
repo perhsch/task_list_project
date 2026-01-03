@@ -14,6 +14,14 @@ const todoSchema = new mongoose.Schema({
 	deadline: { 
 		type: Date, 
 	}, 
+ 	description: {
+		type: String,
+		default: ""
+  	},
+	category: {
+		type: String,
+		required: true, 
+	},
 }); 
 
 
